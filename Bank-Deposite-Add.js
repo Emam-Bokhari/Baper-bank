@@ -8,5 +8,11 @@ document.querySelector('#deposit-btn').addEventListener('click', function(){
     const previousDepositValueConvert=parseFloat(previousDepositValue);
    const currentTotalDeposit=previousDepositValueConvert+convertInputDepositValue;
    previousDeposit.innerText=currentTotalDeposit;
+    // step 03
+   const balance= document.querySelector('#balance');
+   const balanceValue=balance.innerText;
+   const balanceValueConvert=parseFloat(balanceValue);
+   const currentBalanceTotal=balanceValueConvert+convertInputDepositValue;
+   balance.innerText=currentBalanceTotal;
    document.querySelector('#input-deposit').value='';
 })
